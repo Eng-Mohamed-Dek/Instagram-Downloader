@@ -7,11 +7,11 @@ function Home() {
   const [loading, setLoading] = useState(false);
 
   const handleDownload = async () => {
-    const url = import.meta.env.VITE_API_URL;
+    const backend_url = import.meta.env.VITE_API_URL;
 
     try {
       setLoading(true)
-      const response = await fetch(url, {
+      const response = await fetch(backend_url, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
