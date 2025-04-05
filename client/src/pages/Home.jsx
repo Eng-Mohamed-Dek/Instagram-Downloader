@@ -11,7 +11,7 @@ function Home() {
 
     try {
       setLoading(true)
-      const response = await fetch('https://instagram-downloader-api-nine.vercel.app/downloader', {
+      const response = await fetch('https://instagram-downloader-api-nine.vercel.app/download', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
